@@ -1,0 +1,21 @@
+Computer Science in School of Scienve vs School of engineering
+
+Can you help me choose which school to apply to for computer science? I am very obsessed with programming myself, and I study it for hours. I am ready to work a lot, but I do not want to study biology/chemistry, etc., too much. Can you help me which school is better for me to choose? What choice of subjects does Tufts have in engineering school?
+
+--------------------------------------------------------------------------------
+stabbedintheback900x
+•
+1y ago
+•
+Edited 1y ago
+Engineering students are given preference in terms of registering for classes. They register ahead of time before the arts and science computer science students can register. As a consequence, some classes end up being closed and the arts and science computer science students get short changed. This happens term after term and you have to then fill out your schedule with classes you may not want to take.
+
+Both sets of students pay the same tuition however the university has decided to tell computer science students within the arts of sciences program that your tuition dollars are worth LESS than an engineering student.
+
+Not sure why Tufts has decided to favor their engineering students. Many CS students are peeved about how classes get filled up before their registration slot even opens. Classes fill out and the university does not open up another section for them for many classes even though the demand is there. Therefore, many CS classes end up being crammed into your last year when you are able to get them.
+
+How do you know what you may like within CS if you can’t even take the course until you are a senior?
+
+Also be aware the some of the CS courses are not offered year round (unclear why that is when the demand is there).
+
+You may have a more positive/more fairer experience at different University.

@@ -1,0 +1,15 @@
+Computer science is the most popular major at Tufts. But what makes it stand out from other schools, you may ask? Here is why I’ve decided to major in computer science at Tufts, and why I’ve thoroughly enjoyed the classes I’ve taken. 
+
+
+Unlike other schools where you start learning languages in Java or Python, the Tufts curriculum starts in C++, a lower-level language. While it may be harder to grasp at first, it’s important because C++ teaches you about how memory works, and important concepts such as abstraction and modularity. Once you do learn future languages, it is far easier to appreciate what lies beneath. This is reinforced by Tufts’ infamous CS40, where everything is taught in C, and you must interact with the hardware and memory even further. I’ve personally come out of CS40 having a greater understanding of what goes on beneath.
+
+Next, Tufts CS is more math-heavy than others. You have to take Discrete Math, Algorithms, and Computation Theory, all of which are proof-heavy courses. You may not understand them at first, but they are just as crucial to a computer science education as simply churning out projects. Without Algorithms, how can you prove the runtime of your operations or the time it takes for your app to complete its tasks? How can you refactor your code to make it more efficient? Without Computation Theory, how can you design algorithms and software to use in your day-to-day life? All of these questions are faced by industry professionals. 
+
+
+Finally, Tufts CS offers such a variety of courses to explore your interests in which fields of computer science you want to learn more about. After you take CS 15, or Data Structures, you basically can take any level of course offered by the department. If you’re interested in web development, take Web Programming and Software Engineering. AI/ML? We have Intro to AI, Intro to Machine Learning, Human-Robot Interaction, Reinforcement Learning, Computational Biology, and so much more. What about networks and databases? We have Operating Systems, Database Systems, Cybersecurity, etc. Not to mention our special topics courses, running the gamut from IOS development to high-performance computing. 
+
+
+One final piece of advice I’d like to pass on: before you hop on the computer science bandwagon, staring at what could be a ticket to a 100k starting salary, ask yourself if you are really passionate about the subject itself. It’ll be far more satisfying to reap the rewards of what you’ve learned at Tufts rather than solely chasing the money. 
+
+
+If you have any more questions about the major, don’t hesitate to reach out to me! 

@@ -3,9 +3,12 @@ chromadb>=0.6.0
 groq==0.15.0
 python-dotenv==1.0.1
 
-# Query interface — add whichever you use for Milestone 5:
-# gradio>=6.9.0
-# streamlit>=1.40.0
+# Query interface (Milestone 5):
+gradio>=6.9.0
+# NOTE: gradio's metadata asks for huggingface-hub>=1.2, but transformers (used by
+# sentence-transformers) needs huggingface-hub<1.0. The <1.0 version works at runtime
+# for both, so after installing, pin it back:  pip install "huggingface-hub>=0.34,<1.0"
+huggingface-hub>=0.34,<1.0
 
 # Document ingestion — add if your documents/ folder contains .pdf files:
 # pdfplumber==0.11.4

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1180" height="640" fill="#ffffff"/>
+  <text x="590" y="40" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a2e">The Unofficial Guide — RAG Pipeline (Tufts CS)</text>
+  <text x="590" y="66" font-size="14" text-anchor="middle" fill="#666">Stages 1–3 = one-time BUILD (fills vector store on disk).  Stages 4–5 = run PER QUERY.</text>
+
+  <!-- BUILD label -->
+  <rect x="30" y="92" width="700" height="30" rx="6" fill="#eef2ff"/>
+  <text x="45" y="112" font-size="14" font-weight="bold" fill="#3949ab">BUILD (run once, or when sources change)</text>
+
+  <!-- QUERY label -->
+  <rect x="760" y="92" width="390" height="30" rx="6" fill="#fff3e0"/>
+  <text x="775" y="112" font-size="14" font-weight="bold" fill="#e65100">QUERY (runtime, per question)</text>
+
+  <!-- Raw sources -->
+  <rect x="30" y="150" width="150" height="120" rx="10" fill="#f5f5f5" stroke="#bbb"/>
+  <text x="105" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">RAW SOURCES</text>
+  <text x="105" y="205" font-size="12" text-anchor="middle" fill="#555">7 RMP pages</text>
+  <text x="105" y="225" font-size="12" text-anchor="middle" fill="#555">2 Reddit threads</text>
+  <text x="105" y="245" font-size="12" text-anchor="middle" fill="#555">1 article</text>
+
+  <!-- Stage boxes helper via repeated markup -->
+  <!-- Stage 1 -->
+  <rect x="210" y="150" width="170" height="200" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="295" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">1. INGESTION</text>
+  <text x="295" y="200" font-size="12" text-anchor="middle" fill="#1565c0" font-weight="bold">ingest.py</text>
+  <text x="295" y="226" font-size="11.5" text-anchor="middle" fill="#444">requests +</text>
+  <text x="295" y="244" font-size="11.5" text-anchor="middle" fill="#444">beautifulsoup4</text>
+  <text x="295" y="262" font-size="11.5" text-anchor="middle" fill="#444">(pdfplumber if PDF)</text>
+  <text x="295" y="290" font-size="11" text-anchor="middle" fill="#666">clean HTML / nav,</text>
+  <text x="295" y="307" font-size="11" text-anchor="middle" fill="#666">tag source_type</text>
+  <text x="295" y="324" font-size="11" text-anchor="middle" fill="#666">+ metadata</text>
+
+  <!-- Stage 2 -->
+  <rect x="410" y="150" width="170" height="200" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+  <text x="495" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">2. CHUNKING</text>
+  <text x="495" y="200" font-size="12" text-anchor="middle" fill="#2e7d32" font-weight="bold">chunk.py</text>
+  <text x="495" y="226" font-size="11.5" text-anchor="middle" fill="#444">langchain-</text>
+  <text x="495" y="244" font-size="11.5" text-anchor="middle" fill="#444">text-splitters</text>
+  <text x="495" y="290" font-size="11" text-anchor="middle" fill="#666">routes by source_type:</text>
+  <text x="495" y="307" font-size="11" text-anchor="middle" fill="#666">reviews = 1/chunk,</text>
+  <text x="495" y="324" font-size="11" text-anchor="middle" fill="#666">article = 400 tok / 15%</text>
+
+  <!-- Stage 3 -->
+  <rect x="610" y="150" width="170" height="200" rx="10" fill="#f3e5f5" stroke="#8e24aa" stroke-width="2"/>
+  <text x="695" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#4a148c">3. EMBED + STORE</text>
+  <text x="695" y="200" font-size="12" text-anchor="middle" fill="#6a1b9a" font-weight="bold">embed_store.py</text>
+  <text x="695" y="226" font-size="11.5" text-anchor="middle" fill="#444">sentence-</text>
+  <text x="695" y="244" font-size="11.5" text-anchor="middle" fill="#444">transformers</text>
+  <text x="695" y="262" font-size="11.5" text-anchor="middle" fill="#444">all-MiniLM-L6-v2</text>
+  <text x="695" y="290" font-size="11" text-anchor="middle" fill="#666">vectors stored in</text>
+  <text x="695" y="307" font-size="11" text-anchor="middle" fill="#666">ChromaDB</text>
+  <text x="695" y="324" font-size="11" text-anchor="middle" fill="#666">(persists to disk)</text>
+
+  <!-- Stage 4 -->
+  <rect x="810" y="150" width="160" height="200" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="890" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#e65100">4. RETRIEVAL</text>
+  <text x="890" y="200" font-size="12" text-anchor="middle" fill="#ef6c00" font-weight="bold">retrieve.py</text>
+  <text x="890" y="226" font-size="11.5" text-anchor="middle" fill="#444">chromadb</text>
+  <text x="890" y="244" font-size="11.5" text-anchor="middle" fill="#444">similarity search</text>
+  <text x="890" y="290" font-size="11" text-anchor="middle" fill="#666">embed query,</text>
+  <text x="890" y="307" font-size="11" text-anchor="middle" fill="#666">return top-k = 5</text>
+  <text x="890" y="324" font-size="11" text-anchor="middle" fill="#666">chunks + metadata</text>
+
+  <!-- Stage 5 -->
+  <rect x="1000" y="150" width="150" height="200" rx="10" fill="#ffebee" stroke="#e53935" stroke-width="2"/>
+  <text x="1075" y="178" font-size="14" font-weight="bold" text-anchor="middle" fill="#b71c1c">5. GENERATION</text>
+  <text x="1075" y="200" font-size="12" text-anchor="middle" fill="#c62828" font-weight="bold">generate.py</text>
+  <text x="1075" y="226" font-size="11.5" text-anchor="middle" fill="#444">ollama (local</text>
+  <text x="1075" y="244" font-size="11.5" text-anchor="middle" fill="#444">llama3.1) — or</text>
+  <text x="1075" y="262" font-size="11.5" text-anchor="middle" fill="#444">anthropic API</text>
+  <text x="1075" y="290" font-size="11" text-anchor="middle" fill="#666">prompt = query +</text>
+  <text x="1075" y="307" font-size="11" text-anchor="middle" fill="#666">retrieved chunks;</text>
+  <text x="1075" y="324" font-size="11" text-anchor="middle" fill="#666">grounded + cited</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+  <line x1="180" y1="210" x2="208" y2="210" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="380" y1="250" x2="408" y2="250" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="580" y1="250" x2="608" y2="250" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="780" y1="250" x2="808" y2="250" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="970" y1="250" x2="998" y2="250" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- User query into stage 4 -->
+  <rect x="810" y="400" width="160" height="50" rx="10" fill="#fffde7" stroke="#f9a825"/>
+  <text x="890" y="430" font-size="13" font-weight="bold" text-anchor="middle" fill="#e65100">USER QUERY</text>
+  <line x1="890" y1="400" x2="890" y2="352" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Answer out of stage 5 -->
+  <rect x="1000" y="400" width="150" height="50" rx="10" fill="#ffebee" stroke="#e53935"/>
+  <text x="1075" y="423" font-size="13" font-weight="bold" text-anchor="middle" fill="#b71c1c">ANSWER</text>
+  <text x="1075" y="440" font-size="11" text-anchor="middle" fill="#777">+ sources (app.py)</text>
+  <line x1="1075" y1="352" x2="1075" y2="398" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Disk artifacts -->
+  <rect x="210" y="400" width="360" height="46" rx="10" fill="#f5f5f5" stroke="#bbb" stroke-dasharray="5,4"/>
+  <text x="390" y="428" font-size="12" text-anchor="middle" fill="#555">data/raw/ (cleaned text)  →  data/chroma/ (persisted vector store)</text>
+  <line x1="295" y1="350" x2="295" y2="398" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <line x1="695" y1="350" x2="500" y2="398" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- Cost note -->
+  <rect x="30" y="500" width="1120" height="110" rx="10" fill="#f9fbe7" stroke="#c0ca33"/>
+  <text x="50" y="528" font-size="14" font-weight="bold" fill="#33691e">Tooling — all free &amp; pip-installable (preference: local, no API cost)</text>
+  <text x="50" y="552" font-size="12.5" fill="#444">requests + beautifulsoup4 (scrape/clean)  •  langchain-text-splitters (chunk)  •  sentence-transformers / all-MiniLM-L6-v2 (embed)</text>
+  <text x="50" y="572" font-size="12.5" fill="#444">chromadb (vector store, local)  •  ollama + llama3.1 (generation, $0 local)  •  streamlit (query UI)</text>
+  <text x="50" y="596" font-size="12.5" fill="#666">Only swap if you change your mind: GENERATION → anthropic API (better answers, costs cents) if course gives you credits in .env.</text>
+</svg>

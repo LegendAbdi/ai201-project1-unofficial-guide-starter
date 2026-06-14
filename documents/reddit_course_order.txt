@@ -1,0 +1,28 @@
+If I major in comp sci, which courses should I take in which order? (or any advice)
+
+I'm considering comp sci as a major, so I looked at the comp sci major requirements, and I wanted to hear from other comp sci students. I'm taking comp 15 and calc 1 next semester, but after that, which classes do I take? It says comp 40, 105, 160, and 170 are all required, but is it a good idea to take them in order? I heard that comp 40 is really hard, and many other classes only have comp 15 as a prerequisite - should I take different cs courses before comp 40? I also heard that comp 40 and math 61 are good to take in the same semester. Is that true? Any recommendations on cs electives? This isn't urgent or anything, I'm just trying to get an idea of what majoring in cs is like.
+
+Any general guidance or advice from current/past cs majors would be greatly appreciated!
+
+--------------------------------------------------------------------------------
+brawnerboy
+•
+6y ago
+you need to take discrete asap or it's going to prevent you from taking 160. it's doable to take calc 1, discrete and 15 at the same time which is something I would recommend. If you're really ambitious and motivated I would recommend taking 160 over the summer!
+
+--------------------------------------------------------------------------------
+ottrt2
+3y ago
+ I don't know if you ended up taking CS160 this summer, but I am currently taking it and it is brutal but not impossible (the turnaround time of 3-4 days for problem sets is rough, and the lectures are unfortunately rushed because there is only one lecture a week). I have spent more time studying for this course than any course in my life. I'd also point out that I would probably be having an easier time if I weren't also taking CS170 at the same time, and if I didn't have a full-time job. For anyone who stumbles on this thread, if you take CS160 as a summer course, I'd highly recommend that you make it your only course.
+
+--------------------------------------------------------------------------------
+KinkyKankles
+•
+3y ago
+Yeah, that's spot on. I'm taking 160 now and it is doable for me personally, but very rough. The lack of support is pretty killer as is the HW turnaround. How're you feeling for it as we're nearing the final?
+
+--------------------------------------------------------------------------------
+CoolPenguinz
+•
+6y ago
+40 and 105 are both very intense courses that you should plan your semester around. It’s highly recommended to not take a large course load in addition to 40 or 105. Most people take them 40->160->105 with 170 sprinkled in somewhere.

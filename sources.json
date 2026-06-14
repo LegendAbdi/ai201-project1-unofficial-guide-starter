@@ -1,0 +1,12 @@
+[
+  { "id": 1,  "source_type": "rmp",     "name": "Milod Kazerounian (RMP)",        "file": "rmp_kazerounian.txt",     "url": "https://www.ratemyprofessors.com/professor/2685422" },
+  { "id": 2,  "source_type": "rmp",     "name": "Mark Sheldon (RMP)",             "file": "rmp_sheldon.txt",         "url": "https://www.ratemyprofessors.com/professor/1762218" },
+  { "id": 3,  "source_type": "rmp",     "name": "Ming Chow (RMP)",                "file": "rmp_chow.txt",            "url": "https://www.ratemyprofessors.com/professor/1499073" },
+  { "id": 4,  "source_type": "rmp",     "name": "David Lillethun (RMP)",          "file": "rmp_lillethun.txt",       "url": "https://www.ratemyprofessors.com/professor/2647589" },
+  { "id": 5,  "source_type": "rmp",     "name": "Noah Mendelsohn (RMP)",          "file": "rmp_mendelsohn.txt",      "url": "https://www.ratemyprofessors.com/professor/1873452" },
+  { "id": 6,  "source_type": "rmp",     "name": "Fabrizio Santini (RMP)",         "file": "rmp_santini.txt",         "url": "https://www.ratemyprofessors.com/professor/2708190" },
+  { "id": 7,  "source_type": "rmp",     "name": "Karen Edwards (RMP)", "file": "rmp_edwards.txt",   "url": "https://www.ratemyprofessors.com/professor/2434239" },
+  { "id": 8,  "source_type": "reddit",  "name": "CS: School of Science vs Engineering (r/Tufts)", "file": "reddit_science_vs_eng.txt", "url": "https://www.reddit.com/r/Tufts/comments/1hqebvg/computer_science_in_school_of_scienve_vs_school/" },
+  { "id": 9,  "source_type": "article", "name": "Why CS at Tufts (Jumbo Talk)",   "file": "article_why_cs_tufts.txt", "url": "https://admissions.tufts.edu/blogs/jumbo-talk/post/why-cs-at-tufts/" },
+  { "id": 10, "source_type": "reddit",  "name": "Which CS courses, in what order? (r/Tufts)", "file": "reddit_course_order.txt", "url": "https://www.reddit.com/r/Tufts/comments/k0li59/if_i_major_in_comp_sci_which_courses_should_i/" }
+]
